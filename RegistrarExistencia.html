@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de existencia</title>
+</head>
+<body>
+
+<header>
+        <nav></nav>
+        <section>
+
+            <div>
+                <form action="php/conexion.php" method="POST" class="formulario">
+                        <h2>REGISTRO DE EXISTENCIAS</h2>
+                        <br>   
+                        <br>
+
+
+                        <label>Seleccione una categoria de producto:</label>
+                        <br>
+                            <select id="categoria" name="categoria">
+                                <option value="1">Cargador</option>
+                                <option value="2">Audifonos</option>
+                                <option value="3">Cuaderno</option>
+                                <option value="4">Lapices</option>
+                            </select>
+                        <br>
+                        <br>
+
+                        <label id="Observaciones">Observaciones:</label>
+                        <br>
+                        <input type="text" name="Observaciones" id="Observaciones" >
+                        <br>   
+                        <br>  
+
+                        <label id="serial">Numero serial:</label>
+                        <br>
+                        <input type="text" name="serial" id="serial" maxlength="15">
+                        <br>  
+                        <br> 
+
+                        <label id="date">Fecha de garantia:</label>
+                        <br>
+                        <Input type="date" value="2023-01-3" min="2023-01-3" max="2025-12-31" name="fechaGarantia"></Input>
+                        <br>
+                        <br>
+                        
+                            <input type="submit" value="REGISTRA NUEVA EXISTENCIA" id="boton">
+                </form>
+            </div>
+
+        </section>
+        <footer></footer>
+</header>
+
+</body>
+</html>
